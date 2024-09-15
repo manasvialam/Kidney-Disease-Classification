@@ -45,7 +45,7 @@ pip install -r requirements.txt
 - mlflow ui
 
 ...
-### dagshub
+### Dagshub
 [dagshub](https://dagshub.com/)
 
 MLFLOW_TRACKING_URI = https://dagshub.com/Min/Kidney-Disease-Classification.mlflow
