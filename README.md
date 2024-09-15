@@ -61,3 +61,10 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/Min/Kidney-Disease-Classification
 export MLFLOW_TRACKING_USERNAME=Min
 export MLFLOW_TRACKING_PASSWORD= personal token from mlflow
 ```
+
+
+### DVC cmd
+
+1. dvc init
+2. dvc repro
+3. dvc dag
