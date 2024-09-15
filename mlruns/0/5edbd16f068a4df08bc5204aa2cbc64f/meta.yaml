@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/mlruns/0/5edbd16f068a4df08bc5204aa2cbc64f/artifacts
+end_time: 1726390392356
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5edbd16f068a4df08bc5204aa2cbc64f
+run_name: brawny-cow-81
+run_uuid: 5edbd16f068a4df08bc5204aa2cbc64f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726390389166
+status: 3
+tags: []
+user_id: manasvialam
