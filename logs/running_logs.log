@@ -646,3 +646,17 @@ TypeError: a bytes-like object is required, not 'str'
 [2024-09-16 13:44:07,850:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:44:07] "GET / HTTP/1.1" 200 -]
 [2024-09-16 13:44:11,888:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2024-09-16 13:44:12,111:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:44:12] "POST /predict HTTP/1.1" 200 -]
+[2024-09-16 13:52:47,053:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-16 13:52:47,053:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-16 13:52:56,671:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:52:56] "GET / HTTP/1.1" 200 -]
+[2024-09-16 13:53:03,813:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 13:53:03,956:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:53:03] "POST /predict HTTP/1.1" 200 -]
+[2024-09-16 13:53:11,257:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 13:53:11,396:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:53:11] "POST /predict HTTP/1.1" 200 -]
+[2024-09-16 14:47:24,364:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 14:47:24,508:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 14:47:24] "POST /predict HTTP/1.1" 200 -]
+[2024-09-16 14:47:30,312:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 14:47:30,433:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 14:47:30] "POST /predict HTTP/1.1" 200 -]
