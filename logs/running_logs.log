@@ -440,3 +440,209 @@ x=====x]
 [2024-09-15 19:34:29,946:INFO: stage_04_model_evaluation_mlflow: >>>>>>> stage Evaluation stage completed <<<<<<<
 
 x==========x]
+[2024-09-15 20:29:27,259:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-15 20:29:27,259:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-15 20:29:53,285:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:29:53] "GET / HTTP/1.1" 200 -]
+[2024-09-15 20:30:32,374:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 35, in predictRoute
+    decodeImage(image,clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64ecode(imgstring)
+              ^^^^^^^^^^^^^^^
+AttributeError: module 'base64' has no attribute 'b64ecode'. Did you mean: 'b64decode'?
+[2024-09-15 20:30:32,386:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:30:32] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-15 20:31:12,301:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:31:12] "GET / HTTP/1.1" 200 -]
+[2024-09-15 20:31:17,423:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 35, in predictRoute
+    decodeImage(image,clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64ecode(imgstring)
+              ^^^^^^^^^^^^^^^
+AttributeError: module 'base64' has no attribute 'b64ecode'. Did you mean: 'b64decode'?
+[2024-09-15 20:31:17,427:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:31:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-15 20:32:34,798:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-15 20:32:34,798:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-15 20:32:48,071:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:32:48] "GET / HTTP/1.1" 200 -]
+[2024-09-15 20:32:52,369:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 43, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64ecode(imgstring)
+              ^^^^^^^^^^^^^^^
+AttributeError: module 'base64' has no attribute 'b64ecode'. Did you mean: 'b64decode'?
+[2024-09-15 20:32:52,380:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:32:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-15 20:35:21,623:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-15 20:35:21,623:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-15 20:35:28,487:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:35:28] "GET / HTTP/1.1" 200 -]
+[2024-09-15 20:35:34,474:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 43, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64encode(imgstring)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+[2024-09-15 20:35:34,482:INFO: _internal: 127.0.0.1 - - [15/Sep/2024 20:35:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-16 13:41:32,958:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-16 13:41:32,958:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-16 13:41:46,812:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:41:46] "GET / HTTP/1.1" 200 -]
+[2024-09-16 13:41:51,497:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 43, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64encode(imgstring)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+[2024-09-16 13:41:51,509:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:41:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-16 13:42:00,008:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:42:00] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2024-09-16 13:42:00,133:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:42:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-09-16 13:42:14,409:ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/app.py", line 43, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "/Users/manasvialam/Documents/ML_projects/Kidney-Disease-Classification/src/cnnClassifier/utils/common.py", line 121, in decodeImage
+    imgdata = base64.b64encode(imgstring)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/kidney/lib/python3.12/base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+[2024-09-16 13:42:14,415:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:42:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-09-16 13:44:00,880:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2024-09-16 13:44:00,880:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-09-16 13:44:07,850:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:44:07] "GET / HTTP/1.1" 200 -]
+[2024-09-16 13:44:11,888:WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 13:44:12,111:INFO: _internal: 127.0.0.1 - - [16/Sep/2024 13:44:12] "POST /predict HTTP/1.1" 200 -]
