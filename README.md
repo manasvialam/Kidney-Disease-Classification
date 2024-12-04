@@ -1,4 +1,4 @@
-# Kidney-Disease-Classification
+# Kidney Tumor Detection
 Using MLflow and DVC
 
 ## Workflow
